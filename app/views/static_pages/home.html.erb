@@ -1,4 +1,15 @@
-<h1>Sample App</h1>
-<p>
-<a href="https://railstutorial.jp/chapters/static_pages?version=5.1#cha-static_pages">Railsチュートリアルのほぉむぺいじ</a>
-</p>
+<div class="center jumbotron">
+  <h1>Welcome to the Sample App</h1>
+
+  <h2>
+    This is the home page for the
+    <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
+    sample application.
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+
+<div class="container">
+<%= link_to image_tag("rails.png", alt: "Rails logo"), 'http://rubyonrails.org/' %>
+</div>
